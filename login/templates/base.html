@@ -8,11 +8,7 @@
              <!--<link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>-->
 
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-    </head>
-    <body>
-        <div class="page-header">
-            <h1><a href="/">Posts</a></h1>
-            {% if user.is_authenticated %}
+    </head>s %}
                 <a href="{% url 'message_board:post_new' %}" class="top-menu">add post</a>
             {% endif %}
 
