@@ -17,6 +17,6 @@ from django.conf.urls import url, include
 from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^user/',include('login.urls', namespace='login')),
+    url(r'^accounts/',include('login.urls', namespace='login')),
     url(r'',include('message_board.urls', namespace='message_board'))
 ]

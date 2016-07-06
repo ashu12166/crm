@@ -20,4 +20,15 @@ class Post(models.Model):
         return self.title
 
 
-
+# class Freelancer(models.Model):
+#     firstname = models.charfield(amx_length=20)
+#     lastname = models.charfield(max_length=20)
+#     interest = models.charfield(max_length=200)
+#     skils = models.charfield(max_length=200)
+#     experience = models.charfield(max_length=200)
+#
+# class Clients(models.Model):
+#     name = models.charfield(amx_length=20)
+#     firm_name = models.charfield(max_length=20)
+#     reference = models.charfield(max_length=200)
+#     chu = models.charfield(max_length=200)
