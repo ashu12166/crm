@@ -2,7 +2,6 @@
 
 {% block content %}
 		<div class="main">
-			<h1>Crm User Login Form</h1>
 			<div class="input_form">
 				<form action="{% url 'login:auth_view' %}" method="post">
 				{% csrf_token %}

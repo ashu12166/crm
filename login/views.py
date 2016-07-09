@@ -10,12 +10,11 @@ def test(request):
     return "123"
 
 
-# @csrf_exempt
+@csrf_exempt
 def login(request):
     # c = {}
     # c.update(csrf(request))
-    return render(request, 'login.html')
-
+    return render(request, 'envato.rathemes.com/infinity/topbar/login.html')
 
 @csrf_exempt
 def auth_view(request):
@@ -26,7 +25,7 @@ def auth_view(request):
         auth.login(request, user)
         return redirect('message_board:list')
     else:
-        return HttpResponse('notauthenticate', status=403)
+        return HttpResponse('notauthenticate....please login with correct detail', status=403)
 
 
 def post_view(request):

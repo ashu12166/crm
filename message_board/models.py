@@ -26,7 +26,7 @@ class Post(models.Model):
 #     interest = models.charfield(max_length=200)
 #     skils = models.charfield(max_length=200)
 #     experience = models.charfield(max_length=200)
-#
+
 # class Clients(models.Model):
 #     name = models.charfield(amx_length=20)
 #     firm_name = models.charfield(max_length=20)
