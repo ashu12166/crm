@@ -1,3 +1,4 @@
 from django.contrib import admin
+from login.models import Freelancer
 
-# Register your models here.
+admin.site.register(Freelancer)

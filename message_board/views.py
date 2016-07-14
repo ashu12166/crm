@@ -26,6 +26,7 @@ def post_new(request):
     return render(request, 'post_edit.html', {'form': form})
 
 
+@login_required
 def post_detail(request, pk=None):
     print request, pk
     post = get_object_or_404(Post, pk=pk)

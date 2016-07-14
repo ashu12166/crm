@@ -21,11 +21,14 @@ class Post(models.Model):
 
 
 # class Freelancer(models.Model):
-#     firstname = models.charfield(amx_length=20)
-#     lastname = models.charfield(max_length=20)
-#     interest = models.charfield(max_length=200)
-#     skils = models.charfield(max_length=200)
-#     experience = models.charfield(max_length=200)
+#     firstname = models.CharField(max_length=20)
+#     lastname = models.CharField(max_length=20)
+#     interest = models.CharField(max_length=200)
+#     skils = models.TextField()
+#     experience = models.TextField()
+#
+#     def __str__(self):
+#         return self.firstname
 
 # class Clients(models.Model):
 #     name = models.charfield(amx_length=20)

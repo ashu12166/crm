@@ -1,13 +1,14 @@
-<!--{% load staticfiles %}-->
+{% load staticfiles %}
 
 <html>
     <head>
-        <title>Chuchu</title>
+        <title>CRM</title>
+
 
     </head>
     <body>
         <div>
-            <h1><a href="{% url 'post_new' %}"> add post</a></h1>
+            <h1><a href="{% url 'message_board:post_new' %}"> add post</a></h1>
             <h2><a href="/">CRM</a></h2>
         </div>
         <div class="content container">
@@ -19,5 +20,6 @@
             </div>
         </div>
     </body>
-{% url 'post_new' %}
 </html>
+
+
