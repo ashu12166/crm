@@ -5,6 +5,9 @@ from django.core.context_processors import csrf
 from django.template import RequestContext
 from django.views.decorators.csrf import csrf_exempt
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth import get_user_model
+
+User = get_user_model()
 
 
 def test(request):
@@ -16,6 +19,7 @@ def login(request):
     # c = {}
     # c.update(csrf(request))
     return render(request, 'envato.rathemes.com/infinity/topbar/login.html')
+
 
 @csrf_exempt
 def auth_view(request):
